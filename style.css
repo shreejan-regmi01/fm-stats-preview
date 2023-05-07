@@ -123,3 +123,55 @@ body {
   font-size: 0.65rem;
   margin-top: 0.5rem;
 }
+
+#desktop-image {
+  display: none;
+}
+
+#mobile-image {
+  display: block;
+}
+
+@media screen and (min-width: 660px) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1078px;
+  }
+
+  .hero__image {
+    order: 2;
+    /* aspect-ratio: 1/1; */
+    height: 422px;
+  }
+
+  .hero__content {
+    order: 1;
+  }
+
+  #desktop-image {
+    display: block;
+  }
+
+  #mobile-image {
+    display: none;
+  }
+
+  .hero__content {
+    padding: 4rem 7rem 3.5rem 4rem;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .desc {
+    margin-top: 1.5rem;
+  }
+
+  .stats-list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+  }
+}
