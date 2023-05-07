@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --blue-300: hsl(233, 47%, 7%);
+  --blue-200: hsl(244, 38%, 16%);
+  --violet-800: hsl(277, 64%, 61%);
+
+  --white-900: hsl(0, 0%, 100%);
+  --white-A700: hsla(0, 0%, 100%, 0.75);
+  --white-600: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--white-900);
+  font-size: 0.9375rem;
+  min-height: 100vh;
+  background-color: var(--blue-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.hero {
+  background-color: var(--blue-200);
+  text-align: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.hero__image {
+  position: relative;
+}
+
+.hero__image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 87%, 30%);
+  opacity: 0.5;
+}
+
+.hero__content {
+  padding: 2.5rem 2.5rem 1rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.title span {
+  color: var(--violet-800);
+}
+
+.desc {
+  margin-top: 1rem;
+  color: var(--white-A700);
+  line-height: 1.5;
+  font-size: 0.85rem;
+}
+
+.stats-list {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.list-item > span {
+  display: block;
+}
+
+.item-figure {
+  color: var(--white-900);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.item-type {
+  color: var(--white-600);
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.65rem;
+  margin-top: 0.5rem;
+}
