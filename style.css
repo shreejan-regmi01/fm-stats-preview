@@ -137,12 +137,17 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1078px;
+    /* max-height: 400px; */
   }
 
   .hero__image {
     order: 2;
-    /* aspect-ratio: 1/1; */
-    height: 422px;
+  }
+
+  #desktop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .hero__content {
@@ -158,7 +163,7 @@ body {
   }
 
   .hero__content {
-    padding: 4rem 7rem 3.5rem 4rem;
+    padding: 4rem 7rem 2rem 4rem;
     text-align: left;
   }
 
@@ -168,6 +173,7 @@ body {
 
   .desc {
     margin-top: 1.5rem;
+    line-height: 1.8;
   }
 
   .stats-list {
